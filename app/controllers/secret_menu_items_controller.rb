@@ -21,7 +21,7 @@ class SecretMenuItemsController < ApplicationController
 
   def update
     @secret_menu_item = SecretMenuItem.find(params[:id])
-    @secret_menu_item = SecretMenuItem.create(
+    @secret_menu_item = SecretMenuItem.update(
       menu_name: params[:menu_name],
       restaurant_name: params[:restaurant_name],
       menu_description: params[:menu_description]
